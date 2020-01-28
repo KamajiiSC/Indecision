@@ -14,7 +14,11 @@ let template = (
 );
 
 let templateTwo = (
-  <div></div>
+  <div>
+    <h1>Brandon Schaen</h1>
+    <p>Age: 21</p>
+    <p>Location: Baltimore</p>
+  </div>
 );
 
 

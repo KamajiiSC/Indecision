@@ -33,7 +33,25 @@ var template = React.createElement(
   )
 );
 
-var templateTwo = React.createElement("div", null);
+var templateTwo = React.createElement(
+  "div",
+  null,
+  React.createElement(
+    "h1",
+    null,
+    "Brandon Schaen"
+  ),
+  React.createElement(
+    "p",
+    null,
+    "Age: 21"
+  ),
+  React.createElement(
+    "p",
+    null,
+    "Location: Baltimore"
+  )
+);
 
 var appRoot = document.getElementById("app");
 
