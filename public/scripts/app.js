@@ -1,55 +1,52 @@
-"use strict";
+'use strict';
 
 console.log('App.js is running!');
 //babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 //JSX - Javascript XML
 var template = React.createElement(
-  "div",
+  'div',
   null,
   React.createElement(
-    "h1",
+    'h1',
     null,
-    "This is JSX from app.js!"
+    'This is JSX from app.js!'
   ),
   React.createElement(
-    "p",
+    'p',
     null,
-    "This is some info"
+    'This is some info'
   ),
   React.createElement(
-    "ol",
+    'ol',
     null,
     React.createElement(
-      "li",
+      'li',
       null,
-      "Item one"
+      'Item one'
     ),
     React.createElement(
-      "li",
+      'li',
       null,
-      "Item two"
+      'Item two'
     )
   )
 );
 
+var userName = 'Mike';
 var templateTwo = React.createElement(
-  "div",
+  'div',
   null,
+  React.createElement('h1', null),
   React.createElement(
-    "h1",
+    'p',
     null,
-    "Brandon Schaen"
+    'Age: 21'
   ),
   React.createElement(
-    "p",
+    'p',
     null,
-    "Age: 21"
-  ),
-  React.createElement(
-    "p",
-    null,
-    "Location: Baltimore"
+    'Location: Baltimore'
   )
 );
 
