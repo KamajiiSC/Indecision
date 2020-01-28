@@ -6,6 +6,10 @@ let template = (
   <div>
     <h1>This is JSX from app.js!</h1>
     <p>This is some info</p>
+    <ol>
+    <li>Item one</li>
+    <li>Item two</li>
+    </ol>
   </div>
 );
 let appRoot = document.getElementById("app");
