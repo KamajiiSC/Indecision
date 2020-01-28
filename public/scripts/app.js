@@ -42,17 +42,19 @@ var templateTwo = React.createElement(
   React.createElement(
     'h1',
     null,
-    'Brandon Schaen'
+    userName
   ),
   React.createElement(
     'p',
     null,
-    'Age: 21'
+    'Age: ',
+    userAge
   ),
   React.createElement(
     'p',
     null,
-    'Location: Baltimore'
+    'Location: ',
+    userLocation
   )
 );
 

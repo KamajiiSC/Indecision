@@ -18,9 +18,9 @@ let userAge = 21;
 let userLocation = 'Baltimore'
 let templateTwo = (
   <div>
-    <h1>Brandon Schaen</h1>
-    <p>Age: 21</p>
-    <p>Location: Baltimore</p>
+    <h1>{userName}</h1>
+    <p>Age: {userAge}</p>
+    <p>Location: {userLocation}</p>
   </div>
 );
 
