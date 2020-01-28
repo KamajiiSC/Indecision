@@ -2,10 +2,15 @@ console.log('App.js is running!');
 //babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 //JSX - Javascript XML
+let app ={
+  title: 'Jsx Objects',
+  subtitle: 'Made by Brandon'
+};
+
 let template = (
   <div>
-    <h1>This is JSX from app.js!</h1>
-    <p>This is some info</p>
+    <h1>{app.title}</h1>
+    <p>{app.subtitle}</p>
     <ol>
     <li>Item one</li>
     <li>Item two</li>
