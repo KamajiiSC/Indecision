@@ -13,6 +13,12 @@ let template = (
   </div>
 );
 
+let user ={
+  name: 'Brandon',
+  age: 21,
+  location: 'Baltimore'
+};
+
 let userName = 'Brandon';
 let userAge = 21;
 let userLocation = 'Baltimore'

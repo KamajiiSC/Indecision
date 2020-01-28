@@ -33,6 +33,12 @@ var template = React.createElement(
   )
 );
 
+var user = {
+  name: 'Brandon',
+  age: 21,
+  location: 'Baltimore'
+};
+
 var userName = 'Brandon';
 var userAge = 21;
 var userLocation = 'Baltimore';
