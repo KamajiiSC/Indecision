@@ -5,9 +5,18 @@ console.log('App.js is running!');
 
 //JSX - Javascript XML
 var template = React.createElement(
-  "h1",
+  "div",
   null,
-  "This is JSX from app.js!"
+  React.createElement(
+    "h1",
+    null,
+    "This is JSX from app.js!"
+  ),
+  React.createElement(
+    "p",
+    null,
+    "This is some info"
+  )
 );
 var appRoot = document.getElementById("app");
 
