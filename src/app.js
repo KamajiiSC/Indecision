@@ -19,14 +19,11 @@ let user ={
   location: 'Baltimore'
 };
 
-let userName = 'Brandon';
-let userAge = 21;
-let userLocation = 'Baltimore'
 let templateTwo = (
   <div>
-    <h1>{userName}</h1>
-    <p>Age: {userAge}</p>
-    <p>Location: {userLocation}</p>
+    <h1>{user.name}</h1>
+    <p>Age: {user.age}</p>
+    <p>Location: {user.location}</p>
   </div>
 );
 
