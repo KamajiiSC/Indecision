@@ -5,8 +5,8 @@ console.log('App.js is running!');
 
 //JSX - Javascript XML
 var app = {
-  title: 'Jsx Objects',
-  subtitle: 'Made by Brandon'
+  title: 'Inddecision App',
+  subtitle: 'Put your life in the hands of a computer'
 };
 
 var template = React.createElement(
