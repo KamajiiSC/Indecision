@@ -12,6 +12,13 @@ let template = (
     </ol>
   </div>
 );
+
+let templateTwo = (
+  <div></div>
+);
+
+
+
 let appRoot = document.getElementById("app");
 
 ReactDOM.render(template, appRoot);
