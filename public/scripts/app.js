@@ -69,7 +69,7 @@ var templateTwo = React.createElement(
     'p',
     null,
     'Location: ',
-    user.location
+    getLocation(user.location)
   )
 );
 
