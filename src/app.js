@@ -12,7 +12,7 @@ let template = (
   <div>
     <h1>{app.title}</h1>
     {app.subtitle && <p>{app.subtitle}</p>}
-
+    <p>{(app.options.length > 0 )? "Here are your options" : "There are no options"}</p>
     <ol>
     <li>Item one</li>
     <li>Item two</li>
