@@ -9,10 +9,21 @@ console.log('nameLet', nameLet);
 const NAMECONST = 'Frank';
 console.log('NAMECONST', NAMECONST);
 
+//Function scope
 function getPetName(){
-  var petName = 'Hal';
+  const petName = 'Hal';
   return petName;
 }
 
 getPetName();
 console.log(petName);
+
+//Block scoping
+var fullName = "Brandon Schaen";
+
+if(fullName){
+  var firstName = fullName.split(' ')[0];
+  console.log(firstName);
+}
+
+console.log(firstName);
