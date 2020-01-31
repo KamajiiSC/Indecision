@@ -3,4 +3,5 @@ var nameVar = 'Andrew';
 console.log('nameVar', nameVar);
 
 let nameLet = "Jett";
+let nameLet = "Brando";
 console.log('nameLet', nameLet);
