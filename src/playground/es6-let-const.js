@@ -22,7 +22,7 @@ console.log(petName);
 var fullName = "Brandon Schaen";
 
 if(fullName){
-  var firstName = fullName.split(' ')[0];
+  let firstName = fullName.split(' ')[0];
   console.log(firstName);
 }
 
