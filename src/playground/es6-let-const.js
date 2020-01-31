@@ -5,3 +5,6 @@ console.log('nameVar', nameVar);
 let nameLet = "Jett";
 nameLet = "Brando";
 console.log('nameLet', nameLet);
+
+const NAMECONST = 'Frank';
+console.log('NAMECONST', NAMECONST);
