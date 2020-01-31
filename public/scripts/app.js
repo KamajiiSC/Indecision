@@ -4,29 +4,29 @@ console.log('App.js is running!');
 //babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 //JSX - Javascript XML
-var app = {
+var APP = {
   title: 'Inddecision App',
   subtitle: 'Put your life in the hands of a computer',
   options: ['one', 'two']
 };
 
-var template = React.createElement(
+var TEMPLATE = React.createElement(
   'div',
   null,
   React.createElement(
     'h1',
     null,
-    app.title
+    APP.title
   ),
-  app.subtitle && React.createElement(
+  APP.subtitle && React.createElement(
     'p',
     null,
-    app.subtitle
+    APP.subtitle
   ),
   React.createElement(
     'p',
     null,
-    app.options.length > 0 ? "Here are your options" : "There are no options"
+    APP.options.length > 0 ? "Here are your options" : "There are no options"
   ),
   React.createElement(
     'ol',
@@ -44,7 +44,7 @@ var template = React.createElement(
   )
 );
 
-var user = {
+var USER = {
   name: 'Brandon',
   age: 21,
   location: 'Batimore'
@@ -60,23 +60,23 @@ function getLocation(location) {
   }
 }
 
-var templateTwo = React.createElement(
+var TEMPLATETWO = React.createElement(
   'div',
   null,
   React.createElement(
     'h1',
     null,
-    user.name ? user.name : 'Anonymous'
+    USER.name ? USER.name : 'Anonymous'
   ),
-  user.age && user.age >= 18 && React.createElement(
+  USER.age && USER.age >= 18 && React.createElement(
     'p',
     null,
     'Age: ',
-    user.age
+    USER.age
   ),
-  getLocation(user.location)
+  getLocation(USER.location)
 );
 
-var appRoot = document.getElementById("app");
+var APPROOT = document.getElementById("app");
 
-ReactDOM.render(template, appRoot);
+ReactDOM.render(TEMPLATE, APPROOT);
