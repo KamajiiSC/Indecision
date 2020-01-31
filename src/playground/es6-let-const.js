@@ -18,7 +18,8 @@ function getPetName(){
 getPetName();
 console.log(petName);
 
-//Block scoping
+//Block scoping var not block scoped, let/const are
+
 var fullName = "Brandon Schaen";
 
 if(fullName){
