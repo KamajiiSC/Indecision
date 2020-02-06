@@ -44,6 +44,8 @@ var TEMPLATE = React.createElement(
   )
 );
 
+var TEMPLATETWO = {};
+
 var APPROOT = document.getElementById("app");
 
-ReactDOM.render(TEMPLATE, APPROOT);
+ReactDOM.render(TEMPLATETWO, APPROOT);

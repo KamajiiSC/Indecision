@@ -20,10 +20,12 @@ const TEMPLATE = (
   </div>
 );
 
+const TEMPLATETWO ={
 
+};
 
 
 
 const APPROOT = document.getElementById("app");
 
-ReactDOM.render(TEMPLATE, APPROOT);
+ReactDOM.render(TEMPLATETWO, APPROOT);
