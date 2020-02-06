@@ -20,24 +20,7 @@ const TEMPLATE = (
   </div>
 );
 
-const USER ={
-  name: 'Brandon',
-  age: 21,
-  location: 'Batimore'
-};
-function getLocation(location){
-  if(location) {
-    return <p>Location: {location}</p>;
-  }
-}
 
-const TEMPLATETWO = (
-  <div>
-    <h1>{USER.name ? USER.name : 'Anonymous'}</h1>
-    {(USER.age && USER.age >= 18) && <p>Age: {USER.age}</p>}
-    {getLocation(USER.location)}
-  </div>
-);
 
 
 
