@@ -2,17 +2,17 @@ console.log('App.js is running!');
 //babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 //JSX - Javascript XML
-const APP ={
+const app ={
   title: 'Inddecision App',
   subtitle: 'Put your life in the hands of a computer',
   options: ['one', 'two']
 };
 
-const TEMPLATE = (
+const template = (
   <div>
-    <h1>{APP.title}</h1>
-    {APP.subtitle && <p>{APP.subtitle}</p>}
-    <p>{(APP.options.length > 0 )? "Here are your options" : "There are no options"}</p>
+    <h1>{app.title}</h1>
+    {app.subtitle && <p>{app.subtitle}</p>}
+    <p>{(app.options.length > 0 )? "Here are your options" : "There are no options"}</p>
     <ol>
     <li>Item one</li>
     <li>Item two</li>
@@ -20,12 +20,12 @@ const TEMPLATE = (
   </div>
 );
 
-const TEMPLATETWO ={
+const templateTwo ={
 
 };
 
 
 
-const APPROOT = document.getElementById("app");
+const appRoot = document.getElementById("app");
 
-ReactDOM.render(TEMPLATETWO, APPROOT);
+ReactDOM.render(templateTwo, appRoot);

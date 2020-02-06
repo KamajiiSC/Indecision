@@ -4,29 +4,29 @@ console.log('App.js is running!');
 //babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 //JSX - Javascript XML
-var APP = {
+var app = {
   title: 'Inddecision App',
   subtitle: 'Put your life in the hands of a computer',
   options: ['one', 'two']
 };
 
-var TEMPLATE = React.createElement(
+var template = React.createElement(
   'div',
   null,
   React.createElement(
     'h1',
     null,
-    APP.title
+    app.title
   ),
-  APP.subtitle && React.createElement(
+  app.subtitle && React.createElement(
     'p',
     null,
-    APP.subtitle
+    app.subtitle
   ),
   React.createElement(
     'p',
     null,
-    APP.options.length > 0 ? "Here are your options" : "There are no options"
+    app.options.length > 0 ? "Here are your options" : "There are no options"
   ),
   React.createElement(
     'ol',
@@ -44,8 +44,8 @@ var TEMPLATE = React.createElement(
   )
 );
 
-var TEMPLATETWO = {};
+var templateTwo = {};
 
-var APPROOT = document.getElementById("app");
+var appRoot = document.getElementById("app");
 
-ReactDOM.render(TEMPLATETWO, APPROOT);
+ReactDOM.render(templateTwo, appRoot);
