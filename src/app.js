@@ -40,9 +40,10 @@ const templateTwo = (
   </div>
 );
 
-
-
-
 const appRoot = document.getElementById("app");
 
 ReactDOM.render(templateTwo, appRoot);
+
+const renderCounterApp = () => {
+  
+}

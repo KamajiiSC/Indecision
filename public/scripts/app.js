@@ -84,3 +84,5 @@ var templateTwo = React.createElement(
 var appRoot = document.getElementById("app");
 
 ReactDOM.render(templateTwo, appRoot);
+
+var renderCounterApp = function renderCounterApp() {};
