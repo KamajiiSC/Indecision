@@ -23,7 +23,7 @@ const template = (
 let count = 0;
 const addOne = () => {
   count++;
-  console.log('addOne');
+  renderCounterApp();
 };
 const minusOne = () => {
   console.log('minusOne');
