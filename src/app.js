@@ -20,7 +20,11 @@ const template = (
   </div>
 );
 
-
+const templateTwo = (
+  <div>
+    <h1>Count: </h1>
+  </div>
+);
 
 
 

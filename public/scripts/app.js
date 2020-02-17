@@ -44,6 +44,16 @@ var template = React.createElement(
   )
 );
 
+var templateTwo = React.createElement(
+  'div',
+  null,
+  React.createElement(
+    'h1',
+    null,
+    'Count: '
+  )
+);
+
 var appRoot = document.getElementById("app");
 
 ReactDOM.render(templateTwo, appRoot);
