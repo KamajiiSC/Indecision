@@ -56,7 +56,7 @@ var templateTwo = React.createElement(
   ),
   React.createElement(
     'button',
-    { id: 'my-id' },
+    { id: 'my-id', className: 'button' },
     '+1'
   )
 );
