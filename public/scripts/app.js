@@ -54,7 +54,8 @@ var minusOne = function minusOne() {
   renderCounterApp();
 };
 var reset = function reset() {
-  console.log('reset');
+  count = 0;
+  renderCounterApp();
 };
 
 var appRoot = document.getElementById("app");

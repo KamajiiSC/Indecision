@@ -30,7 +30,8 @@ const minusOne = () => {
   renderCounterApp();
 };
 const reset = () => {
-  console.log('reset');
+  count = 0;
+  renderCounterApp();
 };
 
 const appRoot = document.getElementById("app");
