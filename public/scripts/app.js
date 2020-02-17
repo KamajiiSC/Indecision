@@ -44,13 +44,15 @@ var template = React.createElement(
   )
 );
 
+var count = 0;
 var templateTwo = React.createElement(
   'div',
   null,
   React.createElement(
     'h1',
     null,
-    'Count: '
+    'Count: ',
+    count
   )
 );
 

@@ -20,9 +20,10 @@ const template = (
   </div>
 );
 
+let count = 0;
 const templateTwo = (
   <div>
-    <h1>Count: </h1>
+    <h1>Count: {count}</h1>
   </div>
 );
 
