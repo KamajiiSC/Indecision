@@ -22,6 +22,7 @@ const template = (
 
 let count = 0;
 const addOne = () => {
+  count++;
   console.log('addOne');
 };
 const minusOne = () => {
