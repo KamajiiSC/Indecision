@@ -86,3 +86,5 @@ var renderCounterApp = function renderCounterApp() {
   );
   ReactDOM.render(templateTwo, appRoot);
 };
+
+renderCounterApp();
