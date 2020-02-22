@@ -7,7 +7,7 @@ console.log('App.js is running!');
 var app = {
   title: 'Inddecision App',
   subtitle: 'Put your life in the hands of a computer',
-  options: ['one', 'two']
+  options: []
 };
 
 var renderOptions = function renderOptions() {
@@ -33,6 +33,11 @@ var renderOptions = function renderOptions() {
       'p',
       null,
       app.options.length
+    ),
+    React.createElement(
+      'button',
+      { onClick: '' },
+      'Remove All'
     ),
     React.createElement(
       'ol',

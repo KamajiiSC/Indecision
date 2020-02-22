@@ -5,7 +5,7 @@ console.log('App.js is running!');
 const app ={
   title: 'Inddecision App',
   subtitle: 'Put your life in the hands of a computer',
-  options: ['one', 'two']
+  options: []
 };
 
 const renderOptions = () => {
@@ -15,9 +15,10 @@ const renderOptions = () => {
       {app.subtitle && <p>{app.subtitle}</p>}
       <p>{(app.options.length > 0 )? "Here are your options" : "There are no options"}</p>
       <p>{app.options.length}</p>
+      <button onClick="">Remove All</button>
       <ol>
-      <li>Item one</li>
-      <li>Item two</li>
+        <li>Item one</li>
+        <li>Item two</li>
       </ol>
       <form onSubmit={onFormSubmit}>
         <input type='text' name='option' />
