@@ -80,7 +80,10 @@ var onFormSubmit = function onFormSubmit(e) {
   }
 };
 
-var removeOptions = function removeOptions() {};
+var removeOptions = function removeOptions() {
+  app.options = [];
+  renderOptions();
+};
 
 var appRoot = document.getElementById("app");
 renderOptions();

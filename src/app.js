@@ -43,7 +43,8 @@ const onFormSubmit = (e) => {
 };
 
 const removeOptions = () => {
-
+  app.options = [];
+  renderOptions();
 };
 
 
