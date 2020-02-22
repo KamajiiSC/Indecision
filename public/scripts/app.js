@@ -36,7 +36,7 @@ var renderOptions = function renderOptions() {
     ),
     React.createElement(
       'button',
-      { onClick: '' },
+      { onClick: removeOptions },
       'Remove All'
     ),
     React.createElement(
@@ -79,6 +79,8 @@ var onFormSubmit = function onFormSubmit(e) {
     renderOptions();
   }
 };
+
+var removeOptions = function removeOptions() {};
 
 var appRoot = document.getElementById("app");
 renderOptions();
