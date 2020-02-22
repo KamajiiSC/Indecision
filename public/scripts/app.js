@@ -12,6 +12,14 @@ var app = {
 
 var onFormSubmit = function onFormSubmit(e) {
   e.preventDefault();
+
+  var option = e.target.elements.option.value;
+  console.log(e.target.elements.option.value);
+
+  if (option) {
+    app.options.push(option);
+    e.target.elements.option.value = ' ';
+  }
 };
 
 var template = React.createElement(
