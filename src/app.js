@@ -17,8 +17,7 @@ const renderOptions = () => {
       <p>{app.options.length}</p>
       <button onClick={removeOptions}>Remove All</button>
       <ol>
-        <li>Item one</li>
-        <li>Item two</li>
+        
       </ol>
       <form onSubmit={onFormSubmit}>
         <input type='text' name='option' />

@@ -39,20 +39,7 @@ var renderOptions = function renderOptions() {
       { onClick: removeOptions },
       'Remove All'
     ),
-    React.createElement(
-      'ol',
-      null,
-      React.createElement(
-        'li',
-        null,
-        'Item one'
-      ),
-      React.createElement(
-        'li',
-        null,
-        'Item two'
-      )
-    ),
+    React.createElement('ol', null),
     React.createElement(
       'form',
       { onSubmit: onFormSubmit },
