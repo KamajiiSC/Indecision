@@ -39,7 +39,11 @@ var renderOptions = function renderOptions() {
       { onClick: removeOptions },
       'Remove All'
     ),
-    React.createElement('ol', null),
+    React.createElement(
+      'ol',
+      null,
+      app.options.map(function (option) {})
+    ),
     React.createElement(
       'form',
       { onSubmit: onFormSubmit },
