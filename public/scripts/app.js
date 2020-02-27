@@ -42,7 +42,13 @@ var renderOptions = function renderOptions() {
     React.createElement(
       'ol',
       null,
-      app.options.map(function (option) {})
+      app.options.map(function (option) {
+        return React.createElement(
+          'p',
+          { key: option },
+          option
+        );
+      })
     ),
     React.createElement(
       'form',

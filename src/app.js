@@ -19,7 +19,7 @@ const renderOptions = () => {
       <ol>
         {
           app.options.map((option) => {
-
+            return <p key={option}>{option}</p>;
           })
         }
       </ol>
