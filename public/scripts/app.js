@@ -36,6 +36,11 @@ var renderOptions = function renderOptions() {
     ),
     React.createElement(
       'button',
+      { onClick: makeDecision },
+      'What should I do?'
+    ),
+    React.createElement(
+      'button',
       { onClick: removeOptions },
       'Remove All'
     ),
