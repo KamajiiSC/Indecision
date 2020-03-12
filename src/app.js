@@ -52,10 +52,14 @@ const removeOptions = () => {
 };
 
 const makeDecision = () => {
+  if(app.options.length == 0){
+    alert("Please enter options!");
+  }
+  else{
   const randNumb = Math.floor(Math.random() * app.options.length);
   const option = app.options[randNumb];
   alert(option);
-};
+}};
 
 const appRoot = document.getElementById("app");
 renderOptions();
