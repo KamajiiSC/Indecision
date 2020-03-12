@@ -15,7 +15,7 @@ const renderOptions = () => {
       {app.subtitle && <p>{app.subtitle}</p>}
       <p>{(app.options.length > 0 )? "Here are your options" : "There are no options"}</p>
       <p>{app.options.length}</p>
-      <button onClick={makeDecision}>What should I do?</button>
+      <button disabled={app.options.length === 0} onClick={makeDecision}>What should I do?</button>
       <button onClick={removeOptions}>Remove All</button>
       <ol>
         {
@@ -52,14 +52,10 @@ const removeOptions = () => {
 };
 
 const makeDecision = () => {
-  if(app.options.length == 0){
-    alert("Please enter options!");
-  }
-  else{
   const randNumb = Math.floor(Math.random() * app.options.length);
   const option = app.options[randNumb];
   alert(option);
-}};
+};
 
 const appRoot = document.getElementById("app");
 renderOptions();

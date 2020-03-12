@@ -36,7 +36,7 @@ var renderOptions = function renderOptions() {
     ),
     React.createElement(
       'button',
-      { onClick: makeDecision },
+      { disabled: app.options.length === 0, onClick: makeDecision },
       'What should I do?'
     ),
     React.createElement(
@@ -88,13 +88,9 @@ var removeOptions = function removeOptions() {
 };
 
 var makeDecision = function makeDecision() {
-  if (app.options.length == 0) {
-    alert("Please enter options!");
-  } else {
-    var randNumb = Math.floor(Math.random() * app.options.length);
-    var option = app.options[randNumb];
-    alert(option);
-  }
+  var randNumb = Math.floor(Math.random() * app.options.length);
+  var option = app.options[randNumb];
+  alert(option);
 };
 
 var appRoot = document.getElementById("app");
