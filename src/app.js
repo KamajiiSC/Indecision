@@ -52,7 +52,7 @@ const removeOptions = () => {
 };
 
 const makeDecision = () => {
-  const randNumb = Math.random();
+  const randNumb = Math.floor(Math.random() * app.options.length);
 };
 
 const appRoot = document.getElementById("app");

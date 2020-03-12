@@ -88,7 +88,7 @@ var removeOptions = function removeOptions() {
 };
 
 var makeDecision = function makeDecision() {
-  var randNumb = Math.random();
+  var randNumb = Math.floor(Math.random() * app.options.length);
 };
 
 var appRoot = document.getElementById("app");
