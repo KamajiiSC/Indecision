@@ -51,7 +51,9 @@ const removeOptions = () => {
   renderOptions();
 };
 
-
+const makeDecision = () => {
+  const randNumb = Math.random();
+};
 
 const appRoot = document.getElementById("app");
 renderOptions();
