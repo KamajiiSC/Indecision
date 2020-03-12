@@ -53,6 +53,8 @@ const removeOptions = () => {
 
 const makeDecision = () => {
   const randNumb = Math.floor(Math.random() * app.options.length);
+  const option = app.options[randNumb];
+  alert(option);
 };
 
 const appRoot = document.getElementById("app");

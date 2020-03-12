@@ -89,6 +89,8 @@ var removeOptions = function removeOptions() {
 
 var makeDecision = function makeDecision() {
   var randNumb = Math.floor(Math.random() * app.options.length);
+  var option = app.options[randNumb];
+  alert(option);
 };
 
 var appRoot = document.getElementById("app");
