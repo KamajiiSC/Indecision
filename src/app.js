@@ -4,6 +4,13 @@ class Header extends React.Component{
   }
 }
 
+class Action extends React.Component{
+  render() {
+    return(
+      
+    )
+  }
+}
 const jsx = (
   <div>
     <h1>Title</h1>
