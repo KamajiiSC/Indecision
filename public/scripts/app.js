@@ -21,9 +21,18 @@ var Header = function (_React$Component) {
     key: 'render',
     value: function render() {
       return React.createElement(
-        'p',
+        'div',
         null,
-        'This is from Header'
+        React.createElement(
+          'h1',
+          null,
+          'Indecision'
+        ),
+        React.createElement(
+          'h2',
+          null,
+          'Put your life in the hands of a computer'
+        )
       );
     }
   }]);
@@ -66,7 +75,8 @@ var jsx = React.createElement(
     null,
     'Title'
   ),
-  React.createElement(Header, null)
+  React.createElement(Header, null),
+  React.createElement(Action, null)
 );
 
 ReactDOM.render(jsx, document.getElementById('app'));
