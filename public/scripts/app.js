@@ -28,7 +28,7 @@ var IndecisionApp = function (_React$Component) {
         null,
         React.createElement(Header, { title: title, subtitle: subtitle }),
         React.createElement(Action, null),
-        React.createElement(Options, { options: options.length }),
+        React.createElement(Options, { options: options }),
         React.createElement(AddOption, null)
       );
     }
@@ -111,12 +111,13 @@ var Options = function (_React$Component4) {
       return React.createElement(
         'div',
         null,
-        React.createElement(
-          'p',
-          null,
-          this.props.options
-        ),
-        React.createElement(Option, null)
+        this.props.options.map(function (option) {
+          return React.createElement(
+            'p',
+            { key: option },
+            option
+          );
+        })
       );
     }
   }]);
