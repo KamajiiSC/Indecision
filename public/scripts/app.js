@@ -101,8 +101,27 @@ var Action = function (_React$Component3) {
   return Action;
 }(React.Component);
 
-var Options = function (_React$Component4) {
-  _inherits(Options, _React$Component4);
+var Remove = function (_React$Component4) {
+  _inherits(Remove, _React$Component4);
+
+  function Remove() {
+    _classCallCheck(this, Remove);
+
+    return _possibleConstructorReturn(this, (Remove.__proto__ || Object.getPrototypeOf(Remove)).apply(this, arguments));
+  }
+
+  _createClass(Remove, [{
+    key: 'render',
+    value: function render() {
+      return React.createElement('div', null);
+    }
+  }]);
+
+  return Remove;
+}(React.Component);
+
+var Options = function (_React$Component5) {
+  _inherits(Options, _React$Component5);
 
   function Options() {
     _classCallCheck(this, Options);
@@ -126,8 +145,8 @@ var Options = function (_React$Component4) {
   return Options;
 }(React.Component);
 
-var Option = function (_React$Component5) {
-  _inherits(Option, _React$Component5);
+var Option = function (_React$Component6) {
+  _inherits(Option, _React$Component6);
 
   function Option() {
     _classCallCheck(this, Option);
@@ -153,8 +172,8 @@ var Option = function (_React$Component5) {
   return Option;
 }(React.Component);
 
-var AddOption = function (_React$Component6) {
-  _inherits(AddOption, _React$Component6);
+var AddOption = function (_React$Component7) {
+  _inherits(AddOption, _React$Component7);
 
   function AddOption() {
     _classCallCheck(this, AddOption);

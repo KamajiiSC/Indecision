@@ -38,6 +38,16 @@ class Action extends React.Component{
   }
 }
 
+class Remove extends React.Component{
+  render(){
+    return(
+      <div>
+        
+      </div>
+    );
+  }
+}
+
 class Options extends React.Component{
   render(){
     return(
