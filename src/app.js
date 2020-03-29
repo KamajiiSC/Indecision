@@ -42,7 +42,7 @@ class Remove extends React.Component{
   render(){
     return(
       <div>
-        
+        <button onClick={this.handleRemove}>Remove All</button>
       </div>
     );
   }

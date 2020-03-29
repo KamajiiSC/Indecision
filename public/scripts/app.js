@@ -113,7 +113,15 @@ var Remove = function (_React$Component4) {
   _createClass(Remove, [{
     key: 'render',
     value: function render() {
-      return React.createElement('div', null);
+      return React.createElement(
+        'div',
+        null,
+        React.createElement(
+          'button',
+          { onClick: this.handleRemove },
+          'Remove All'
+        )
+      );
     }
   }]);
 
