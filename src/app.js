@@ -29,12 +29,22 @@ class Options extends React.Component{
   }
 }
 
+class AddOption extends React.Component{
+  render(){
+    return(
+      <div>
+        <p>AddOption component</p>
+      </div>
+    );
+  }
+}
 
 const jsx = (
   <div>
     <Header />
     <Action />
     <Options />
+    <AddOption />
   </div>
 )
 
