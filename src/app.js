@@ -39,6 +39,9 @@ class Action extends React.Component{
 }
 
 class Remove extends React.Component{
+  handleRemove() {
+    alert('Remove');
+  }
   render(){
     return(
       <div>

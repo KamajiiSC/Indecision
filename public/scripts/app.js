@@ -111,6 +111,11 @@ var Remove = function (_React$Component4) {
   }
 
   _createClass(Remove, [{
+    key: 'handleRemove',
+    value: function handleRemove() {
+      alert('Remove');
+    }
+  }, {
     key: 'render',
     value: function render() {
       return React.createElement(
