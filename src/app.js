@@ -1,3 +1,16 @@
+class IndecisionApp extends React.Component{
+  render(){
+    return(
+      <div>
+        <Header />
+        <Action />
+        <Options />
+        <AddOption />
+      </div>
+    );
+  }
+}
+
 class Header extends React.Component{
   render(){
     return(
@@ -24,6 +37,17 @@ class Options extends React.Component{
     return(
       <div>
         <p>Options component</p>
+        <Option />
+      </div>
+    );
+  }
+}
+
+class Option extends React.Component{
+  render(){
+    return(
+      <div>
+        <p>Option Component</p>
       </div>
     );
   }
