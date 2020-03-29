@@ -79,6 +79,9 @@ var Action = function (_React$Component3) {
   }
 
   _createClass(Action, [{
+    key: 'handleSelect',
+    value: function handleSelect() {}
+  }, {
     key: 'render',
     value: function render() {
       return React.createElement(
@@ -86,7 +89,7 @@ var Action = function (_React$Component3) {
         null,
         React.createElement(
           'button',
-          null,
+          { onClick: this.handleSelect },
           'What should I do'
         )
       );
