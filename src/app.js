@@ -15,14 +15,26 @@ class Action extends React.Component{
       <div>
         <button>What should I do</button>
       </div>
-    )
+    );
   }
 }
+
+class Options extends React.Component{
+  render(){
+    return(
+      <div>
+        <p>Options component</p>
+      </div>
+    );
+  }
+}
+
+
 const jsx = (
   <div>
-    <h1>Title</h1>
     <Header />
     <Action />
+    <Options />
   </div>
 )
 
