@@ -38,23 +38,14 @@ class Action extends React.Component{
   }
 }
 
-class Remove extends React.Component{
-  handleRemove() {
+class Options extends React.Component{
+  handleRemove (){
     alert('Remove');
   }
   render(){
     return(
       <div>
         <button onClick={this.handleRemove}>Remove All</button>
-      </div>
-    );
-  }
-}
-
-class Options extends React.Component{
-  render(){
-    return(
-      <div>
         {
           this.props.options.map((option) => <Option key={option} optionText={option}/>)
         }
