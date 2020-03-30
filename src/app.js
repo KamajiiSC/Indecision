@@ -65,10 +65,16 @@ class Option extends React.Component{
 }
 
 class AddOption extends React.Component{
+  handleOption() {
+    alert('Input');
+  }
   render(){
     return(
       <div>
-        
+        <form onSubmit={this.handleOption}>
+          <input type="text"></input>
+          <button type="submit">Submit</button>
+        </form>
       </div>
     );
   }
