@@ -68,7 +68,7 @@ class AddOption extends React.Component{
   render(){
     return(
       <div>
-        <p>AddOption component</p>
+        
       </div>
     );
   }
