@@ -195,7 +195,7 @@ var AddOption = function (_React$Component6) {
           React.createElement(
             'button',
             { type: 'submit' },
-            'Submit'
+            'Add Option'
           )
         )
       );
