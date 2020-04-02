@@ -104,16 +104,16 @@ var Action = function (_React$Component3) {
 var Options = function (_React$Component4) {
   _inherits(Options, _React$Component4);
 
-  function Options() {
+  function Options(props) {
     _classCallCheck(this, Options);
 
-    return _possibleConstructorReturn(this, (Options.__proto__ || Object.getPrototypeOf(Options)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Options.__proto__ || Object.getPrototypeOf(Options)).call(this, props));
   }
 
   _createClass(Options, [{
     key: 'handleRemove',
     value: function handleRemove() {
-      alert('Remove');
+      alert(this.props.options);
     }
   }, {
     key: 'render',
