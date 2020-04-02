@@ -68,7 +68,7 @@ class AddOption extends React.Component{
   handleOption(e) {
     e.preventDefault();
 
-    const option = e.target.elements.option.value;
+    const option = e.target.elements.option.value.trim;
     if(option){
       alert('Input');
     }
