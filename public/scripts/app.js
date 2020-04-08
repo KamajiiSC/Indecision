@@ -39,7 +39,11 @@ var ToggleVisibility = function (_React$Component) {
           null,
           'Visibility Toggle'
         ),
-        React.createElement('button', null)
+        React.createElement(
+          'button',
+          null,
+          visibility ? 'Hide details' : 'Show details'
+        )
       );
     }
   }]);

@@ -15,7 +15,7 @@ class ToggleVisibility extends React.Component{
     return(
       <div>
         <h1>Visibility Toggle</h1>
-        <button></button>
+        <button>{visibility ? 'Hide details' : 'Show details'}</button>
       </div>
     );
   }
