@@ -20,11 +20,14 @@ class Header extends React.Component{
 }
 
 class ToggleVisibility extends React.Component{
+  handleVisibility(){
+    alert('hello');
+  }
   render(){
     let isVisible = false;
     return(
       <div>
-        <button>Show Details</button>
+        <button onClick={this.handleVisibility}>Show Details</button>
         {isVisible && <p>Some details!</p>}
       </div>
     );

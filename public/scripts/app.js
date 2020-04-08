@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -18,12 +18,12 @@ var Visibility = function (_React$Component) {
   }
 
   _createClass(Visibility, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       var title = "Visibility Toggle";
 
       return React.createElement(
-        "div",
+        'div',
         null,
         React.createElement(Header, { title: title }),
         React.createElement(ToggleVisibility, null)
@@ -44,10 +44,10 @@ var Header = function (_React$Component2) {
   }
 
   _createClass(Header, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return React.createElement(
-        "h1",
+        'h1',
         null,
         this.props.title
       );
@@ -67,21 +67,26 @@ var ToggleVisibility = function (_React$Component3) {
   }
 
   _createClass(ToggleVisibility, [{
-    key: "render",
+    key: 'handleVisibility',
+    value: function handleVisibility() {
+      alert('hello');
+    }
+  }, {
+    key: 'render',
     value: function render() {
       var isVisible = false;
       return React.createElement(
-        "div",
+        'div',
         null,
         React.createElement(
-          "button",
-          null,
-          "Show Details"
+          'button',
+          { onClick: this.handleVisibility },
+          'Show Details'
         ),
         isVisible && React.createElement(
-          "p",
+          'p',
           null,
-          "Some details!"
+          'Some details!'
         )
       );
     }
