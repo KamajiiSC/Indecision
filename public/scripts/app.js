@@ -56,4 +56,16 @@ var Header = function (_React$Component2) {
   return Header;
 }(React.Component);
 
+var ToggleVisibility = function (_React$Component3) {
+  _inherits(ToggleVisibility, _React$Component3);
+
+  function ToggleVisibility() {
+    _classCallCheck(this, ToggleVisibility);
+
+    return _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).apply(this, arguments));
+  }
+
+  return ToggleVisibility;
+}(React.Component);
+
 ReactDOM.render(React.createElement(Visibility, null), document.getElementById('app'));

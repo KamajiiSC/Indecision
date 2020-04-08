@@ -17,4 +17,9 @@ class Header extends React.Component{
     );
   }
 }
+
+class ToggleVisibility extends React.Component{
+
+}
+
 ReactDOM.render(<Visibility />, document.getElementById('app'));
