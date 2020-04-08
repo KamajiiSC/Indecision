@@ -71,9 +71,18 @@ var ToggleVisibility = function (_React$Component3) {
     value: function render() {
       var isVisible = false;
       return React.createElement(
-        "button",
+        "div",
         null,
-        "Show Details"
+        React.createElement(
+          "button",
+          null,
+          "Show Details"
+        ),
+        isVisible && React.createElement(
+          "p",
+          null,
+          "Some details!"
+        )
       );
     }
   }]);

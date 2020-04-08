@@ -23,7 +23,10 @@ class ToggleVisibility extends React.Component{
   render(){
     let isVisible = false;
     return(
-      <button>Show Details</button>
+      <div>
+        <button>Show Details</button>
+        {isVisible && <p>Some details!</p>}
+      </div>
     );
   }
 }
