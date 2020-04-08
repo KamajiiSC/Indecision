@@ -1,98 +1,38 @@
 'use strict';
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+var visibility = false;
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var toggleVisibility = function toggleVisibility() {
+  visibility = !visibility;
+  render();
+};
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Visibility = function (_React$Component) {
-  _inherits(Visibility, _React$Component);
-
-  function Visibility() {
-    _classCallCheck(this, Visibility);
-
-    return _possibleConstructorReturn(this, (Visibility.__proto__ || Object.getPrototypeOf(Visibility)).apply(this, arguments));
-  }
-
-  _createClass(Visibility, [{
-    key: 'render',
-    value: function render() {
-      var title = "Visibility Toggle";
-
-      return React.createElement(
-        'div',
+var render = function render() {
+  var jsx = React.createElement(
+    'div',
+    null,
+    React.createElement(
+      'h1',
+      null,
+      'Visibility Toggle'
+    ),
+    React.createElement(
+      'button',
+      { onClick: toggleVisibility },
+      visibility ? 'Hide details' : 'Show details'
+    ),
+    visibility && React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'p',
         null,
-        React.createElement(Header, { title: title }),
-        React.createElement(ToggleVisibility, null)
-      );
-    }
-  }]);
+        'Hey. These are some details you can now see!'
+      )
+    )
+  );
 
-  return Visibility;
-}(React.Component);
+  ReactDOM.render(jsx, document.getElementById('app'));
+};
 
-var Header = function (_React$Component2) {
-  _inherits(Header, _React$Component2);
-
-  function Header() {
-    _classCallCheck(this, Header);
-
-    return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-  }
-
-  _createClass(Header, [{
-    key: 'render',
-    value: function render() {
-      return React.createElement(
-        'h1',
-        null,
-        this.props.title
-      );
-    }
-  }]);
-
-  return Header;
-}(React.Component);
-
-var ToggleVisibility = function (_React$Component3) {
-  _inherits(ToggleVisibility, _React$Component3);
-
-  function ToggleVisibility() {
-    _classCallCheck(this, ToggleVisibility);
-
-    return _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).apply(this, arguments));
-  }
-
-  _createClass(ToggleVisibility, [{
-    key: 'handleVisibility',
-    value: function handleVisibility() {
-      alert('hello');
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var isVisible = false;
-      return React.createElement(
-        'div',
-        null,
-        React.createElement(
-          'button',
-          { onClick: this.handleVisibility },
-          'Show Details'
-        ),
-        isVisible && React.createElement(
-          'p',
-          null,
-          'Some details!'
-        )
-      );
-    }
-  }]);
-
-  return ToggleVisibility;
-}(React.Component);
-
-ReactDOM.render(React.createElement(Visibility, null), document.getElementById('app'));
+render();

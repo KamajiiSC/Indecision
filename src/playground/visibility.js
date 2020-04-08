@@ -1,37 +1,26 @@
-class Visibility extends React.Component{
-  render(){
-    const title = "Visibility Toggle";
+let visibility = false;
 
-    return(
-      <div>
-        <Header title = {title}/>
-        <ToggleVisibility />
-      </div>
-    );
-  }
-}
+const toggleVisibility = () => {
+  visibility = !visibility;
+  render();
+};
 
-class Header extends React.Component{
-  render(){
-    return(
-      <h1>{this.props.title}</h1>
-    );
-  }
-}
+const render = () => {
+  const jsx = (
+    <div>
+      <h1>Visibility Toggle</h1>
+      <button onClick={toggleVisibility}>
+        {visibility ? 'Hide details' : 'Show details'}
+      </button>
+      {visibility && (
+        <div>
+          <p>Hey. These are some details you can now see!</p>
+        </div>
+      )}
+    </div>
+  );
 
-class ToggleVisibility extends React.Component{
-  handleVisibility(){
-    alert('hello');
-  }
-  render(){
-    let isVisible = false;
-    return(
-      <div>
-        <button onClick={this.handleVisibility}>Show Details</button>
-        {isVisible && <p>Some details!</p>}
-      </div>
-    );
-  }
-}
+  ReactDOM.render(jsx, document.getElementById('app'));
+};
 
-ReactDOM.render(<Visibility />, document.getElementById('app'));
+render();
