@@ -1,7 +1,11 @@
 let visibility = false;
 
 class ToggleVisibility extends React.Component{
+  render(){
+    return(
 
+    );
+  }
 }
 /*const toggleVisibility = () => {
   visibility = !visibility;
