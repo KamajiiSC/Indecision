@@ -1,6 +1,6 @@
 class Visibility extends React.Component{
   render(){
-    const title = "Visibility";
+    const title = "Visibility Toggle";
 
     return(
       <div>

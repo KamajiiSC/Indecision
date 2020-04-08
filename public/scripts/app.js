@@ -20,7 +20,7 @@ var Visibility = function (_React$Component) {
   _createClass(Visibility, [{
     key: "render",
     value: function render() {
-      var title = "Visibility";
+      var title = "Visibility Toggle";
 
       return React.createElement(
         "div",
