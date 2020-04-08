@@ -3,7 +3,9 @@ let visibility = false;
 class ToggleVisibility extends React.Component{
   render(){
     return(
-
+      <div>
+        <h1>Visibility Toggle</h1>
+      </div>
     );
   }
 }
