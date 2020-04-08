@@ -16,10 +16,16 @@ var ToggleVisibility = function (_React$Component) {
   function ToggleVisibility(props) {
     _classCallCheck(this, ToggleVisibility);
 
-    return _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).call(this, props));
+
+    _this.handleToggle = _this.handleToggle.bind(_this);
+    return _this;
   }
 
   _createClass(ToggleVisibility, [{
+    key: 'handleToggle',
+    value: function handleToggle() {}
+  }, {
     key: 'render',
     value: function render() {
       return React.createElement(
