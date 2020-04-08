@@ -25,7 +25,8 @@ var Visibility = function (_React$Component) {
       return React.createElement(
         "div",
         null,
-        React.createElement(Header, { title: title })
+        React.createElement(Header, { title: title }),
+        React.createElement(ToggleVisibility, null)
       );
     }
   }]);

@@ -5,6 +5,7 @@ class Visibility extends React.Component{
     return(
       <div>
         <Header title = {title}/>
+        <ToggleVisibility />
       </div>
     );
   }
