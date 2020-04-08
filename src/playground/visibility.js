@@ -1,6 +1,9 @@
 let visibility = false;
 
 class ToggleVisibility extends React.Component{
+  constructor(props) {
+    super(props);
+  }
   render(){
     return(
       <div>
@@ -17,7 +20,6 @@ class ToggleVisibility extends React.Component{
 const render = () => {
   const jsx = (
     <div>
-      <h1>Visibility Toggle</h1>
       <button onClick={toggleVisibility}>
         {visibility ? 'Hide details' : 'Show details'}
       </button>

@@ -13,10 +13,10 @@ var visibility = false;
 var ToggleVisibility = function (_React$Component) {
   _inherits(ToggleVisibility, _React$Component);
 
-  function ToggleVisibility() {
+  function ToggleVisibility(props) {
     _classCallCheck(this, ToggleVisibility);
 
-    return _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).call(this, props));
   }
 
   _createClass(ToggleVisibility, [{
@@ -45,11 +45,6 @@ var render = function render() {
   var jsx = React.createElement(
     'div',
     null,
-    React.createElement(
-      'h1',
-      null,
-      'Visibility Toggle'
-    ),
     React.createElement(
       'button',
       { onClick: toggleVisibility },
