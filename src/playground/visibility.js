@@ -1,7 +1,6 @@
 class Visibility extends React.Component{
   render(){
     const title = "Visibility Toggle";
-    let isVisible = false;
 
     return(
       <div>
@@ -22,9 +21,9 @@ class Header extends React.Component{
 
 class ToggleVisibility extends React.Component{
   render(){
+    let isVisible = false;
     return(
       <button>Show Details</button>
-      
     );
   }
 }

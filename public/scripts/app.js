@@ -21,7 +21,6 @@ var Visibility = function (_React$Component) {
     key: "render",
     value: function render() {
       var title = "Visibility Toggle";
-      var isVisible = false;
 
       return React.createElement(
         "div",
@@ -70,6 +69,7 @@ var ToggleVisibility = function (_React$Component3) {
   _createClass(ToggleVisibility, [{
     key: "render",
     value: function render() {
+      var isVisible = false;
       return React.createElement(
         "button",
         null,
