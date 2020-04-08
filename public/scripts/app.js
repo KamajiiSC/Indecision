@@ -48,8 +48,5 @@ var render = function render() {
       )
     )
   );
-
-  ReactDOM.render(jsx, document.getElementById('app'));
 };
-
-render();
+ReactDOM.render(React.createElement(ToggleVisibility, null), document.getElementById('app'));

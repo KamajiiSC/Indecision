@@ -1,7 +1,7 @@
 let visibility = false;
 
 class ToggleVisibility extends React.Component{
-  
+
 }
 /*const toggleVisibility = () => {
   visibility = !visibility;
@@ -22,8 +22,6 @@ const render = () => {
       )}
     </div>
   );
-
-  ReactDOM.render(jsx, document.getElementById('app'));
 };
+ReactDOM.render(<ToggleVisibility />, document.getElementById('app'));
 
-render();
