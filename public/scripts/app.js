@@ -49,6 +49,11 @@ var ToggleVisibility = function (_React$Component) {
           'button',
           { onClick: this.handleToggle },
           this.state.visibility ? 'Hide details' : 'Show details'
+        ),
+        this.state.visibility && React.createElement(
+          'p',
+          null,
+          'Some details!'
         )
       );
     }
