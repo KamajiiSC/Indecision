@@ -27,7 +27,13 @@ var ToggleVisibility = function (_React$Component) {
 
   _createClass(ToggleVisibility, [{
     key: 'handleToggle',
-    value: function handleToggle() {}
+    value: function handleToggle() {
+      this.setState(function (prevState) {
+        return {
+          visibility: !prevState.visibility
+        };
+      });
+    }
   }, {
     key: 'render',
     value: function render() {
@@ -41,8 +47,8 @@ var ToggleVisibility = function (_React$Component) {
         ),
         React.createElement(
           'button',
-          null,
-          visibility ? 'Hide details' : 'Show details'
+          { onClick: this.handleToggle },
+          this.state.visibility ? 'Hide details' : 'Show details'
         )
       );
     }
