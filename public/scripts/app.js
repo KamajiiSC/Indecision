@@ -19,6 +19,9 @@ var ToggleVisibility = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).call(this, props));
 
     _this.handleToggle = _this.handleToggle.bind(_this);
+    _this.state = {
+      visibility: false
+    };
     return _this;
   }
 
@@ -35,7 +38,8 @@ var ToggleVisibility = function (_React$Component) {
           'h1',
           null,
           'Visibility Toggle'
-        )
+        ),
+        React.createElement('button', null)
       );
     }
   }]);
