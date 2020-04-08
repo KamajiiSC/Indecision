@@ -61,29 +61,5 @@ var ToggleVisibility = function (_React$Component) {
 
   return ToggleVisibility;
 }(React.Component);
-/*const toggleVisibility = () => {
-  visibility = !visibility;
-  render();
-};*/
 
-var render = function render() {
-  var jsx = React.createElement(
-    'div',
-    null,
-    React.createElement(
-      'button',
-      { onClick: toggleVisibility },
-      visibility ? 'Hide details' : 'Show details'
-    ),
-    visibility && React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'p',
-        null,
-        'Hey. These are some details you can now see!'
-      )
-    )
-  );
-};
 ReactDOM.render(React.createElement(ToggleVisibility, null), document.getElementById('app'));
