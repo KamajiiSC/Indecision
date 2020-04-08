@@ -65,6 +65,17 @@ var ToggleVisibility = function (_React$Component3) {
     return _possibleConstructorReturn(this, (ToggleVisibility.__proto__ || Object.getPrototypeOf(ToggleVisibility)).apply(this, arguments));
   }
 
+  _createClass(ToggleVisibility, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "button",
+        null,
+        "Show Details"
+      );
+    }
+  }]);
+
   return ToggleVisibility;
 }(React.Component);
 
