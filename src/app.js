@@ -9,9 +9,7 @@ class IndecisionApp extends React.Component{
     }
   }
   handlePick() {
-    this.setState(() => {
-      return{};
-    });
+    
   }
 
   handleDeleteOptions() {
