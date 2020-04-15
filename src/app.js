@@ -10,12 +10,11 @@ class IndecisionApp extends React.Component{
   render(){
     const title = 'Indecision';
     const subtitle = 'Put your life in the hands of a computer';
-    const options = ['Thing one', 'Thing two', 'Thing three']
     return(
       <div>
         <Header title={title} subtitle={subtitle}/>
         <Action />
-        <Options options={options}/>
+        <Options options={this.state.options}/>
         <AddOption />
       </div>
     );
