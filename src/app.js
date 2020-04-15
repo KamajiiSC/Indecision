@@ -7,6 +7,13 @@ class IndecisionApp extends React.Component{
       options: ['Thing one', 'Thing two', 'Thing three']
     }
   }
+  handleDeleteOptions() {
+    this.set.state(() => {
+      return{
+        options: []
+      };
+    });
+  }
   render(){
     const title = 'Indecision';
     const subtitle = 'Put your life in the hands of a computer';
