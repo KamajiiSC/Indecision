@@ -27,7 +27,10 @@ var IndecisionApp = function (_React$Component) {
 
   _createClass(IndecisionApp, [{
     key: 'handlePick',
-    value: function handlePick() {}
+    value: function handlePick() {
+      pick = this.state.options[Math.floor(Math.random * (options.length - 1))];
+      alert(pick);
+    }
   }, {
     key: 'handleDeleteOptions',
     value: function handleDeleteOptions() {
