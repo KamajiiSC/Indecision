@@ -53,9 +53,6 @@ class Header extends React.Component{
 }
 
 class Action extends React.Component{
-  handleSelect() {
-    alert("handle select");
-  }
   render() {
     return(
       <div>
