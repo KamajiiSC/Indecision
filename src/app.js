@@ -6,11 +6,11 @@ class IndecisionApp extends React.Component{
     this.handleDeleteOptions = this.handleDeleteOptions.bind(this);
     this.handlePick = this.handlePick.bind(this);
     this.state = {
-      options: ['Thing one', 'Thing two', 'Thing thee']
+      options: ['Thing one', 'Thing two', 'Thing three']
     }
   }
   handlePick() {
-    pick = this.state.options[Math.floor(Math.random * (options.length - 1))];
+    let pick = this.state.options[Math.floor(Math.random() * this.state.options.length)];
     alert(pick);
   }
 
@@ -57,7 +57,7 @@ class Action extends React.Component{
     return(
       <div>
         <button 
-        onClick={this.handleSelect}
+        onClick={this.props.handlePick}
         disabled={!this.props.hasOptions}
         >What should I do</button>
       </div>

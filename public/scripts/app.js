@@ -21,7 +21,7 @@ var IndecisionApp = function (_React$Component) {
     _this.handleDeleteOptions = _this.handleDeleteOptions.bind(_this);
     _this.handlePick = _this.handlePick.bind(_this);
     _this.state = {
-      options: ['Thing one', 'Thing two', 'Thing thee']
+      options: ['Thing one', 'Thing two', 'Thing three']
     };
     return _this;
   }
@@ -29,7 +29,7 @@ var IndecisionApp = function (_React$Component) {
   _createClass(IndecisionApp, [{
     key: 'handlePick',
     value: function handlePick() {
-      pick = this.state.options[Math.floor(Math.random * (options.length - 1))];
+      var pick = this.state.options[Math.floor(Math.random() * this.state.options.length)];
       alert(pick);
     }
   }, {
@@ -116,7 +116,7 @@ var Action = function (_React$Component3) {
         React.createElement(
           'button',
           {
-            onClick: this.handleSelect,
+            onClick: this.props.handlePick,
             disabled: !this.props.hasOptions
           },
           'What should I do'
