@@ -26,6 +26,13 @@ var IndecisionApp = function (_React$Component) {
   }
 
   _createClass(IndecisionApp, [{
+    key: 'handlePick',
+    value: function handlePick() {
+      this.setState(function () {
+        return {};
+      });
+    }
+  }, {
     key: 'handleDeleteOptions',
     value: function handleDeleteOptions() {
       this.setState(function () {

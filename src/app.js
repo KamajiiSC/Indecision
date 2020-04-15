@@ -8,6 +8,12 @@ class IndecisionApp extends React.Component{
       options: ['Thing one', 'Thing two', 'Thing thee']
     }
   }
+  handlePick() {
+    this.setState(() => {
+      return{};
+    });
+  }
+
   handleDeleteOptions() {
     this.setState(() => {
       return{
