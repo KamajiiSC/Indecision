@@ -27,7 +27,10 @@ class IndecisionApp extends React.Component{
     return(
       <div>
         <Header title={title} subtitle={subtitle}/>
-        <Action hasOptions={this.state.options.length > 0} />
+        <Action 
+        hasOptions={this.state.options.length > 0} 
+        handlePick={this.handlePick}
+        />
         <Options 
         options={this.state.options}
         handleDeleteOptions={this.handleDeleteOptions}
