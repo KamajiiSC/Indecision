@@ -1,10 +1,13 @@
 //babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 
 class IndecisionApp extends React.Component{
+  constructor(props) {
+    super(props);
+  }
   render(){
     const title = 'Indecision';
     const subtitle = 'Put your life in the hands of a computer';
-    const options = ['Thing one', 'Thing two', 'Thing three'];
+    const options = ['Thing one', 'Thing two', 'Thing three']
     return(
       <div>
         <Header title={title} subtitle={subtitle}/>
