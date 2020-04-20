@@ -46,7 +46,9 @@ var IndecisionApp = function (_React$Component) {
     key: 'handleAddOption',
     value: function handleAddOption(option) {
       this.setState(function (prevState) {
-        return {};
+        return {
+          options: prevState.options.concat(option)
+        };
       });
     }
   }, {
