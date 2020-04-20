@@ -196,20 +196,23 @@ var Option = function (_React$Component5) {
 var AddOption = function (_React$Component6) {
   _inherits(AddOption, _React$Component6);
 
-  function AddOption() {
+  function AddOption(props) {
     _classCallCheck(this, AddOption);
 
-    return _possibleConstructorReturn(this, (AddOption.__proto__ || Object.getPrototypeOf(AddOption)).apply(this, arguments));
+    var _this6 = _possibleConstructorReturn(this, (AddOption.__proto__ || Object.getPrototypeOf(AddOption)).call(this, props));
+
+    _this6.handleAddOption = _this6.handleAddOption.bind(_this6);
+    return _this6;
   }
 
   _createClass(AddOption, [{
-    key: 'handleOption',
-    value: function handleOption(e) {
+    key: 'handleAddOption',
+    value: function handleAddOption(e) {
       e.preventDefault();
 
-      var option = e.target.elements.option.value.trim;
+      var option = e.target.elements.option.value.trim();
       if (option) {
-        alert('Input');
+        this.props.handleAddOption(option);
       }
     }
   }, {
@@ -220,7 +223,7 @@ var AddOption = function (_React$Component6) {
         null,
         React.createElement(
           'form',
-          { onSubmit: this.handleOption },
+          { onSubmit: this.handleAddOption },
           React.createElement('input', { type: 'text', name: 'option' }),
           React.createElement(
             'button',
