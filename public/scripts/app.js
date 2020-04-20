@@ -42,6 +42,11 @@ var IndecisionApp = function (_React$Component) {
       });
     }
   }, {
+    key: 'handleAddOption',
+    value: function handleAddOption(option) {
+      console.log(option);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var title = 'Indecision';

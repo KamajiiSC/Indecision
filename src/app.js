@@ -13,7 +13,6 @@ class IndecisionApp extends React.Component{
     let pick = this.state.options[Math.floor(Math.random() * this.state.options.length)];
     alert(pick);
   }
-
   handleDeleteOptions() {
     this.setState(() => {
       return{
@@ -21,6 +20,10 @@ class IndecisionApp extends React.Component{
       };
     });
   }
+  handleAddOption(option) {
+    console.log(option);
+  }
+  
   render(){
     const title = 'Indecision';
     const subtitle = 'Put your life in the hands of a computer';
