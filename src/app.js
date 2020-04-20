@@ -22,7 +22,11 @@ class IndecisionApp extends React.Component{
     });
   }
   handleAddOption(option) {
-    console.log(option);
+    this.setState((prevState) => {
+      return {
+        
+      };
+    });
   }
   
   render(){
