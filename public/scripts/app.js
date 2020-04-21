@@ -96,9 +96,13 @@ var Header = function Header(props) {
     React.createElement(
       'h2',
       null,
-      props.title
+      props.subtitle
     )
   );
+};
+
+Header.defaultProps = {
+  title: 'some default'
 };
 
 var Action = function Action(props) {
