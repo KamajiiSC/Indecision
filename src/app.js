@@ -147,8 +147,12 @@ constructor(props) {
     const option = e.target.elements.option.value.trim();
     const error = this.props.handleAddOption(option);
 
-    e.target.elements.option.value = "";
-  this.setState(() => ({error}));
+    this.setState(() => ({error}));
+
+    if(!error){
+      e.target.elements.option.value = '';
+    }
+
   }
   render(){
     return(
