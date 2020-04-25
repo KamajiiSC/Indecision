@@ -12,7 +12,11 @@ class IndecisionApp extends React.Component{
     }
   }
   componentDidMount() {
-
+    const json = localStorage.getItem('options');
+    const options = JSON.parse(json);
+    if(options){
+      this.setState(() => ({options}));
+    }
     console.log('fetching data');
   }
   componentDidUpdate(prevProps, prevState) {
