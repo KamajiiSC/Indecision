@@ -110,9 +110,7 @@ constructor(props) {
     const error = this.props.handleAddOption(option);
 
     e.target.elements.option.value = "";
-  this.setState(() => {
-      return {error};
-    });
+  this.setState(() => ({error}));
   }
   render(){
     return(
