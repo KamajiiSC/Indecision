@@ -11,6 +11,13 @@ class IndecisionApp extends React.Component{
       options: []
     }
   }
+  componentDidMount() {
+    console.log('fetching data');
+  }
+  componentDidUpdate(prevProps, prevState) {
+    console.log('saving data')
+  }
+
   handlePick() {
     let pick = this.state.options[Math.floor(Math.random() * this.state.options.length)];
     alert(pick);

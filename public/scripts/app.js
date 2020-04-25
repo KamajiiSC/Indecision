@@ -29,6 +29,16 @@ var IndecisionApp = function (_React$Component) {
   }
 
   _createClass(IndecisionApp, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      console.log('fetching data');
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      console.log('saving data');
+    }
+  }, {
     key: 'handlePick',
     value: function handlePick() {
       var pick = this.state.options[Math.floor(Math.random() * this.state.options.length)];
