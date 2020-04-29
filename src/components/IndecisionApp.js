@@ -9,25 +9,6 @@ export default class IndecisionApp extends React.Component{
     options: []
   }
 
-  componentDidMount() {
-    try{
-      const json = localStorage.getItem('options');
-      const options = JSON.parse(json);
-      if(options){
-        this.setState(() => ({options}));
-      }
-    } catch (e){
-      //Do nothing
-    }
-  }
-  componentDidUpdate(prevProps, prevState) {
-    if(prevState.length !== this.state.options.length){
-     const json = JSON.stringify(this.state.options);
-     localStorage.setItem('options', json);
-     console.log('saving data')
-    }
-  }
-
   handlePick = () => {
     let pick = this.state.options[Math.floor(Math.random() * this.state.options.length)];
     alert(pick);
@@ -50,6 +31,25 @@ export default class IndecisionApp extends React.Component{
     this.setState((prevState) => ({options: prevState.options.concat(option)}));
   }
   
+  componentDidMount() {
+    try{
+      const json = localStorage.getItem('options');
+      const options = JSON.parse(json);
+      if(options){
+        this.setState(() => ({options}));
+      }
+    } catch (e){
+      //Do nothing
+    }
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if(prevState.length !== this.state.options.length){
+     const json = JSON.stringify(this.state.options);
+     localStorage.setItem('options', json);
+     console.log('saving data')
+    }
+  }
+
   render(){
     const title = 'Indecision';
     const subtitle = 'Put your life in the hands of a computer';
