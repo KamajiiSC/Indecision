@@ -7,7 +7,7 @@ import Options from './Options';
 export default class IndecisionApp extends React.Component{
   state = {
     options: []
-  }
+  };
 
   handlePick = () => {
     let pick = this.state.options[Math.floor(Math.random() * this.state.options.length)];
